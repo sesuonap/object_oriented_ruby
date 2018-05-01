@@ -38,6 +38,7 @@ item_3 = Item.new({item_color: "blue", item_price: 50, item_shape: "triangle"})
 
  puts item_1.item_color 
  puts item_1.item_color = "magenta"
+
 item_1.print_all 
 
 
