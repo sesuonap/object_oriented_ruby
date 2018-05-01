@@ -10,7 +10,11 @@ class Vehichle
 
   def accelerate
     @speed += 10
-  end
+  end 
+
+  def current_speed
+    @speed.to_s + "mph"
+  end 
 
   def turn(new_direction)
     @direction = new_direction
@@ -32,6 +36,11 @@ end
 
 car = Car.new()
 car.honk_horn
+car.accelerate
+car.accelerate
+car.accelerate
+p car.current_speed
+ 
 
 bike = Bike.new()
 bike.ring_bell
